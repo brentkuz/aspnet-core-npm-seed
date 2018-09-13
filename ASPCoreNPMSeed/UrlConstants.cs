@@ -7,6 +7,6 @@ namespace ASPCoreNPMSeed
 {
     public class UrlConstants
     {
-        //Example: public string Home_Index { get; } = "/Home/Index";
+        public string Home_Index { get; } = "/Data/SomeData";
     }
 }
