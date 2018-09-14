@@ -1,5 +1,3 @@
-using System;
-
 namespace ASPCoreNPMSeed.Models
 {
     public class ErrorViewModel

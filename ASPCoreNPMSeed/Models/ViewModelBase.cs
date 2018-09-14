@@ -2,14 +2,13 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace ASPCoreNPMSeed.Models
 {
     public class ViewModelBase
     {
+        protected UrlConstants urls = new UrlConstants();
         public virtual string GetClientConfig()
         {
             var dict = new Dictionary<string, string>();
@@ -24,7 +23,7 @@ namespace ASPCoreNPMSeed.Models
         }
         public virtual string GetUrls()
         {
-            return JsonConvert.SerializeObject(new UrlConstants());
+            return JsonConvert.SerializeObject(urls);
         }
     }
 }
